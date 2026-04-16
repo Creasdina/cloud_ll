@@ -1,0 +1,7 @@
+plugins {
+    id 'java-library'
+}
+
+dependencies {
+    api 'org.projectlombok:lombok:1.18.30'
+}

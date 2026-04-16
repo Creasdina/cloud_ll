@@ -1,0 +1,15 @@
+plugins {
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+}
+
+dependencies {
+    implementation project(':cloud-common')
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    // Nacos 服务注册/发现依赖
+    implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery'
+    // 如果要用 Nacos 做配置中心，添加下面这个
+    implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-config'
+    // 3. 必须补充这个，否则 Spring Cloud 2023 无法实现服务发现和调用
+    implementation 'org.springframework.cloud:spring-cloud-starter-loadbalancer'
+}

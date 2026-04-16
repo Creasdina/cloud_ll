@@ -1,0 +1,10 @@
+rootProject.name = 'cloud-ll'
+
+include 'cloud-common'
+include 'cloud-auth'
+include 'cloud-pms'
+include 'cloud-gateway'
+
+
+
+
