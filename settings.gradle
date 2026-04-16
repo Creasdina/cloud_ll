@@ -1,4 +1,4 @@
-rootProject.name = 'cloud-ll'
+rootProject.name = 'cloud_ll'
 
 include 'cloud-common'
 include 'cloud-auth'
